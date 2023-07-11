@@ -61,7 +61,7 @@ class ClientTest(unittest.TestCase):
         
     test_data = getRatio(prices["ABC"], prices["DEF"])
     expect_price = round((prices["ABC"] / prices["DEF"]), 2)
-    self.assertEqual(test_data        , expect_price)
+    self.assertEqual(test_data, expect_price, "Ratio is not calculation is failed")
 
 
 if __name__ == '__main__':
